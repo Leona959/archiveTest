@@ -1,0 +1,400 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* general */
+@font-face {
+	font-family: 'SFTransRobotics';
+	src: url('../images/SFTransRobotics.ttf'); /* IE9 Compat Modes */
+	src: url('../images/SFTransRobotics.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../images/SFTransRobotics.ttf') format('woff'), /* Modern Browsers */
+	url('../images/SFTransRobotics.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	font-family: SFTransRobotics;
+	-webkit-text-size-adjust: 100%;
+	background-color: #333;
+}
+
+@media screen and (orientation:landscape) {
+	.pvp-background {
+		position: relative;
+		margin: 0 auto;
+		width: 1920px;
+		height: 1080px;
+		background-image: url('../images/pvp-background.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		font-size: 20px;
+	}
+	.pvp-title {
+		left: 176px;
+		top: 40px;
+		position: absolute;
+		width: 665px;
+		height: 88px;
+		background-image: url('../images/pvp-title.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.token-coin {
+		right: 760px;
+		top: 62px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-coin.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-coin .token-coin-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 53px;
+		height: 51px;
+		background-image: url('../images/token-coin-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.token-subcoin {
+		right: 430px;
+		top: 62px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-subcoin.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-subcoin .token-subcoin-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 53px;
+		height: 51px;
+		background-image: url('../images/token-subcoin-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.token-bnb {
+		right: 98px;
+		top: 62px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-bnb.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-bnb .token-bnb-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 108px;
+		height: 51px;
+		background-image: url('../images/token-bnb-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.back-button {
+		left: 20px;
+		top: 30px;
+		position: absolute;
+		width: 218px;
+		height: 231px;
+		background-image: url('../images/back-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.team-tag {
+		top: 740px;
+		left: 20px;
+		position: absolute;
+		width: 603px;
+		height: 48px;
+		background-image: url('../images/team-tag.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.team-tag .team-left-button {
+		left: 10px;
+		top: -20px;
+		position: absolute;
+		width: 76px;
+		height: 87px;
+		background-image: url('../images/team-left-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.team-tag .team-right-button {
+		left: 450px;
+		top: -20px;
+		position: absolute;
+		width: 76px;
+		height: 87px;
+		background-image: url('../images/team-right-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.team-list-area {
+		top: 790px;
+		left: 0px;
+		position: absolute;
+		width: 876px;
+		height: 269px;
+		/*background-image: url('../images/team-tag.png');*/
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.team-list-item {
+		display:none;
+	}
+	.nft-slot {
+		width: 219px;
+		height: 269px;
+		/*background-image: url('../images/nft-slot.png');*/
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.nft-small-card {
+		width: 219px;
+		height: 269px;
+		/*background-image: url('../images/nft-small-card-1.png');*/
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		padding: 188px 0px 0px 150px;
+		color: #fff;
+		text-align: left;
+	}
+	.pvp-warfare-nav {
+		left: 10px;
+		top: 348px;
+		position: absolute;
+		width: 252px;
+		height: 130px;
+		background-image: url('../images/pvp-warfare-nav.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.pvp-pvp-nav {
+		left: 10px;
+		top: 468px;
+		position: absolute;
+		width: 252px;
+		height: 130px;
+		background-image: url('../images/pvp-pvp-nav.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.line-break {
+		left: 260px;
+		top: 300px;
+		position: absolute;
+		width: 4px;
+		height: 420px;
+		background-image: url('../images/line-break.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		opacity: 0.3;
+	}
+	.pvp-total-border {
+		left: 920px;
+		top: 880px;
+		position: absolute;
+		width: 320px;
+		height: 90px;
+		background-image: url('../images/pvp-total-border.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.pvp-total-hp {
+		left: 60px;
+		top: 10px;
+		position: absolute;
+		width: 242px;
+		height: 30px;
+		background-image: url('../images/pvp-total-hp.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 2px 20px 0px 40px;
+		color: #fff;
+		text-align: right;
+	}
+	.pvp-total-atk {
+		left: 60px;
+		top: 50px;
+		position: absolute;
+		width: 242px;
+		height: 30px;
+		background-image: url('../images/pvp-total-atk.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 2px 20px 0px 40px;
+		color: #fff;
+		text-align: right;
+	}
+}
+
+@media screen and (orientation:portrait) {
+	.pvp-background {
+		position: relative;
+		margin: 0 auto;
+		width: 1080px;
+		height: 1920px;
+		background-image: url('../images/pvp-background.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		font-size: 20px;
+	}
+	.pvp-title {
+		left: 176px;
+		top: 40px;
+		position: absolute;
+		width: 665px;
+		height: 88px;
+		background-image: url('../images/pvp-title.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.token-coin {
+		right: 745px;
+		top: 268px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-coin.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-coin .token-coin-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 53px;
+		height: 51px;
+		background-image: url('../images/token-coin-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.token-subcoin {
+		right: 415px;
+		top: 268px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-subcoin.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-subcoin .token-subcoin-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 53px;
+		height: 51px;
+		background-image: url('../images/token-subcoin-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.token-bnb {
+		right: 83px;
+		top: 268px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-bnb.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-bnb .token-bnb-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 108px;
+		height: 51px;
+		background-image: url('../images/token-bnb-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.back-button {
+		left: 20px;
+		top: 30px;
+		position: absolute;
+		width: 218px;
+		height: 231px;
+		background-image: url('../images/back-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+}

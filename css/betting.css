@@ -1,0 +1,256 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* general */
+@font-face {
+	font-family: 'SFTransRobotics';
+	src: url('../images/SFTransRobotics.ttf'); /* IE9 Compat Modes */
+	src: url('../images/SFTransRobotics.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../images/SFTransRobotics.ttf') format('woff'), /* Modern Browsers */
+	url('../images/SFTransRobotics.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	font-family: SFTransRobotics;
+	-webkit-text-size-adjust: 100%;
+	background-color: #333;
+}
+
+@media screen and (orientation:landscape) {
+	.betting-background {
+		position: relative;
+		margin: 0 auto;
+		width: 1920px;
+		height: 1080px;
+		background-image: url('../images/betting-background.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		font-size: 20px;
+	}
+	.betting-title {
+		left: 176px;
+		top: 40px;
+		position: absolute;
+		width: 665px;
+		height: 88px;
+		background-image: url('../images/betting-title.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.token-coin {
+		right: 760px;
+		top: 62px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-coin.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-coin .token-coin-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 53px;
+		height: 51px;
+		background-image: url('../images/token-coin-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.token-subcoin {
+		right: 430px;
+		top: 62px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-subcoin.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-subcoin .token-subcoin-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 53px;
+		height: 51px;
+		background-image: url('../images/token-subcoin-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.token-bnb {
+		right: 98px;
+		top: 62px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-bnb.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-bnb .token-bnb-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 108px;
+		height: 51px;
+		background-image: url('../images/token-bnb-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.back-button {
+		left: 20px;
+		top: 30px;
+		position: absolute;
+		width: 218px;
+		height: 231px;
+		background-image: url('../images/back-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+}
+
+@media screen and (orientation:portrait) {
+	.betting-background {
+		position: relative;
+		margin: 0 auto;
+		width: 1080px;
+		height: 1920px;
+		background-image: url('../images/betting-background.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		font-size: 20px;
+	}
+	.betting-title {
+		left: 176px;
+		top: 40px;
+		position: absolute;
+		width: 665px;
+		height: 88px;
+		background-image: url('../images/betting-title.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.token-coin {
+		right: 745px;
+		top: 268px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-coin.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-coin .token-coin-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 53px;
+		height: 51px;
+		background-image: url('../images/token-coin-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.token-subcoin {
+		right: 415px;
+		top: 268px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-subcoin.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-subcoin .token-subcoin-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 53px;
+		height: 51px;
+		background-image: url('../images/token-subcoin-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.token-bnb {
+		right: 83px;
+		top: 268px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-bnb.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-bnb .token-bnb-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 108px;
+		height: 51px;
+		background-image: url('../images/token-bnb-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.back-button {
+		left: 20px;
+		top: 30px;
+		position: absolute;
+		width: 218px;
+		height: 231px;
+		background-image: url('../images/back-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+}

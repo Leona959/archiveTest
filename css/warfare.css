@@ -1,0 +1,613 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* general */
+@font-face {
+	font-family: 'SFTransRobotics';
+	src: url('../images/SFTransRobotics.ttf'); /* IE9 Compat Modes */
+	src: url('../images/SFTransRobotics.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../images/SFTransRobotics.ttf') format('woff'), /* Modern Browsers */
+	url('../images/SFTransRobotics.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	font-family: SFTransRobotics;
+	-webkit-text-size-adjust: 100%;
+	background-color: #333;
+}
+
+@media screen and (orientation:landscape) {
+	.warfare-background {
+		position: relative;
+		margin: 0 auto;
+		width: 1920px;
+		height: 1080px;
+		background-image: url('../images/warfare-background.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		font-size: 20px;
+	}
+	.warfare-title {
+		left: 176px;
+		top: 40px;
+		position: absolute;
+		width: 665px;
+		height: 88px;
+		background-image: url('../images/warfare-title.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.token-coin {
+		right: 760px;
+		top: 62px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-coin.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-coin .token-coin-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 53px;
+		height: 51px;
+		background-image: url('../images/token-coin-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.token-subcoin {
+		right: 430px;
+		top: 62px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-subcoin.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-subcoin .token-subcoin-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 53px;
+		height: 51px;
+		background-image: url('../images/token-subcoin-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.token-bnb {
+		right: 98px;
+		top: 62px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-bnb.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-bnb .token-bnb-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 108px;
+		height: 51px;
+		background-image: url('../images/token-bnb-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.back-button {
+		left: 20px;
+		top: 30px;
+		position: absolute;
+		width: 218px;
+		height: 231px;
+		background-image: url('../images/back-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.team-tag {
+		top: 740px;
+		left: 20px;
+		position: absolute;
+		width: 603px;
+		height: 48px;
+		background-image: url('../images/team-tag.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.team-tag .team-left-button {
+		left: 10px;
+		top: -20px;
+		position: absolute;
+		width: 76px;
+		height: 87px;
+		background-image: url('../images/team-left-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.team-tag .team-right-button {
+		left: 450px;
+		top: -20px;
+		position: absolute;
+		width: 76px;
+		height: 87px;
+		background-image: url('../images/team-right-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.team-list-area {
+		top: 790px;
+		left: 0px;
+		position: absolute;
+		width: 876px;
+		height: 269px;
+		/*background-image: url('../images/team-tag.png');*/
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.team-list-item {
+		display:none;
+	}
+	.nft-slot {
+		width: 219px;
+		height: 269px;
+		/*background-image: url('../images/nft-slot.png');*/
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.nft-small-card {
+		width: 219px;
+		height: 269px;
+		/*background-image: url('../images/nft-small-card-1.png');*/
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		padding: 188px 0px 0px 150px;
+		color: #fff;
+		text-align: left;
+	}
+	.warfare-1 {
+		left: 358px;
+		top: 306px;
+		position: absolute;
+		width: 417px;
+		height: 135px;
+		background-image: url('../images/warfare-1.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.warfare-2 {
+		left: 456px;
+		top: 551px;
+		position: absolute;
+		width: 417px;
+		height: 135px;
+		background-image: url('../images/warfare-2.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.warfare-3 {
+		left: 815px;
+		top: 180px;
+		position: absolute;
+		width: 417px;
+		height: 135px;
+		background-image: url('../images/warfare-3.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.warfare-4 {
+		left: 955px;
+		top: 425px;
+		position: absolute;
+		width: 417px;
+		height: 135px;
+		background-image: url('../images/warfare-4.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.warfare-warfare-nav {
+		left: 10px;
+		top: 348px;
+		position: absolute;
+		width: 252px;
+		height: 130px;
+		background-image: url('../images/warfare-warfare-nav.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.warfare-pvp-nav {
+		left: 10px;
+		top: 468px;
+		position: absolute;
+		width: 252px;
+		height: 130px;
+		background-image: url('../images/warfare-pvp-nav.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.line-break {
+		left: 260px;
+		top: 300px;
+		position: absolute;
+		width: 4px;
+		height: 420px;
+		background-image: url('../images/line-break.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		opacity: 0.3;
+	}
+	.warfare-selected-battle {
+		right: 0px;
+		top: 230px;
+		position: absolute;
+		width: 639px;
+		height: 116px;
+		background-image: url('../images/warfare-selected-battle.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 34px 0px 0px 184px;
+		color: #fff;
+		text-align: left;
+		font-size: 68px;
+	}
+	.warfare-15mins {
+		right: 0px;
+		top: 360px;
+		position: absolute;
+		/*width: 639px;
+		height: 116px;*/
+		/*background-image: url('../images/warfare-selected-battle.png');*/
+		/*background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;*/
+		padding: 10px 30px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.warfare-requirement-title {
+		right: 0px;
+		top: 440px;
+		position: absolute;
+		width: 335px;
+		height: 47px;
+		background-image: url('../images/warfare-requirement-title.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.warfare-requirement-hp {
+		right: 230px;
+		top: 500px;
+		position: absolute;
+		width: 198px;
+		height: 38px;
+		background-image: url('../images/warfare-requirement-hp.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 5px 20px;
+		color: #fff;
+		text-align: right;
+	}
+	.warfare-requirement-atk {
+		right: 230px;
+		top: 540px;
+		position: absolute;
+		width: 198px;
+		height: 38px;
+		background-image: url('../images/warfare-requirement-atk.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 5px 20px;
+		color: #fff;
+		text-align: right;
+	}
+	.warfare-requirement-armor {
+		right: 230px;
+		top: 580px;
+		position: absolute;
+		width: 198px;
+		height: 38px;
+		background-image: url('../images/warfare-requirement-armor.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 5px 20px;
+		color: #fff;
+		text-align: right;
+	}
+	.warfare-requirement-crit {
+		right: 10px;
+		top: 500px;
+		position: absolute;
+		width: 198px;
+		height: 38px;
+		background-image: url('../images/warfare-requirement-crit.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 5px 20px;
+		color: #fff;
+		text-align: right;
+	}
+	.warfare-requirement-magicpower {
+		right: 10px;
+		top: 540px;
+		position: absolute;
+		width: 198px;
+		height: 38px;
+		background-image: url('../images/warfare-requirement-magicpower.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 5px 20px;
+		color: #fff;
+		text-align: right;
+	}
+	.warfare-requirement-magicresist {
+		right: 10px;
+		top: 580px;
+		position: absolute;
+		width: 198px;
+		height: 38px;
+		background-image: url('../images/warfare-requirement-magicresist.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 5px 20px;
+		color: #fff;
+		text-align: right;
+	}
+	.warfare-requirement-block {
+		right: 10px;
+		top: 620px;
+		position: absolute;
+		width: 198px;
+		height: 38px;
+		background-image: url('../images/warfare-requirement-block.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 5px 20px;
+		color: #fff;
+		text-align: right;
+	}
+	.warfare-famring {
+		right: 50px;
+		top: 680px;
+		position: absolute;
+		width: 402px;
+		height: 122px;
+		background-image: url('../images/warfare-famring.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.warfare-claim-button {
+		right: 80px;
+		top: 880px;
+		position: absolute;
+		width: 334px;
+		height: 146px;
+		background-image: url('../images/warfare-claim-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 8px 120px 0px 0px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.warfare-total-border {
+		left: 920px;
+		top: 880px;
+		position: absolute;
+		width: 320px;
+		height: 90px;
+		background-image: url('../images/warfare-total-border.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.warfare-total-hp {
+		left: 60px;
+		top: 10px;
+		position: absolute;
+		width: 242px;
+		height: 30px;
+		background-image: url('../images/warfare-total-hp.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 2px 20px 0px 40px;
+		color: #fff;
+		text-align: right;
+	}
+	.warfare-total-atk {
+		left: 60px;
+		top: 50px;
+		position: absolute;
+		width: 242px;
+		height: 30px;
+		background-image: url('../images/warfare-total-atk.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 2px 20px 0px 40px;
+		color: #fff;
+		text-align: right;
+	}
+}
+
+@media screen and (orientation:portrait) {
+	.warfare-background {
+		position: relative;
+		margin: 0 auto;
+		width: 1080px;
+		height: 1920px;
+		background-image: url('../images/warfare-background.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		font-size: 20px;
+	}
+	.warfare-title {
+		left: 176px;
+		top: 40px;
+		position: absolute;
+		width: 665px;
+		height: 88px;
+		background-image: url('../images/warfare-title.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.token-coin {
+		right: 745px;
+		top: 268px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-coin.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-coin .token-coin-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 53px;
+		height: 51px;
+		background-image: url('../images/token-coin-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.token-subcoin {
+		right: 415px;
+		top: 268px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-subcoin.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-subcoin .token-subcoin-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 53px;
+		height: 51px;
+		background-image: url('../images/token-subcoin-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.token-bnb {
+		right: 83px;
+		top: 268px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-bnb.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-bnb .token-bnb-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 108px;
+		height: 51px;
+		background-image: url('../images/token-bnb-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.back-button {
+		left: 20px;
+		top: 30px;
+		position: absolute;
+		width: 218px;
+		height: 231px;
+		background-image: url('../images/back-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+}

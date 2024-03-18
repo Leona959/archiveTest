@@ -1,0 +1,889 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* general */
+@font-face {
+	font-family: 'SFTransRobotics';
+	src: url('../images/SFTransRobotics.ttf'); /* IE9 Compat Modes */
+	src: url('../images/SFTransRobotics.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../images/SFTransRobotics.ttf') format('woff'), /* Modern Browsers */
+	url('../images/SFTransRobotics.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	font-family: SFTransRobotics;
+	-webkit-text-size-adjust: 100%;
+	background-color: #333;
+}
+
+@media screen and (orientation:landscape) {
+	.hero-background {
+		position: relative;
+		margin: 0 auto;
+		width: 1920px;
+		height: 1080px;
+		background-image: url('../images/hero-background.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		font-size: 20px;
+	}
+	.hero-title {
+		left: 176px;
+		top: 40px;
+		position: absolute;
+		width: 665px;
+		height: 88px;
+		background-image: url('../images/hero-title.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.token-coin {
+		right: 760px;
+		top: 62px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-coin.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-coin .token-coin-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 53px;
+		height: 51px;
+		background-image: url('../images/token-coin-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.token-subcoin {
+		right: 430px;
+		top: 62px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-subcoin.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-subcoin .token-subcoin-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 53px;
+		height: 51px;
+		background-image: url('../images/token-subcoin-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.token-bnb {
+		right: 98px;
+		top: 62px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-bnb.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-bnb .token-bnb-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 108px;
+		height: 51px;
+		background-image: url('../images/token-bnb-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.back-button {
+		left: 20px;
+		top: 30px;
+		position: absolute;
+		width: 218px;
+		height: 231px;
+		background-image: url('../images/back-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.nft-list-area {
+		left: 900px;
+		top: 180px;
+		position: absolute;
+		width: 970px;
+		height: 720px;
+		/*background-image: url('../images/list-border-pc.png');*/
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 0px 10px;
+		overflow-y: scroll;
+	}
+	.nft-list-area .list-area {
+		height: 714px;
+	}
+	.nft-slot {
+		width: 219px;
+		height: 269px;
+		/*background-image: url('../images/nft-slot.png');*/
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.nft-small-card {
+		width: 219px;
+		height: 269px;
+		/*background-image: url('../images/nft-small-card-1.png');*/
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		padding: 188px 0px 0px 150px;
+		color: #fff;
+		text-align: left;
+	}
+	.nft-avatar-card {
+		left: 150px;
+		bottom: 0px;
+		position: absolute;
+		width: 688px;
+		height: 885px;
+		/*background-image: url('../images/worker-big-card-1.png');*/
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.hero-filter-all {
+		left: 950px;
+		bottom: 68px;
+		position: absolute;
+		width: 177px;
+		height: 54px;
+		background-image: url('../images/hero-filter-all.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.hero-filter-ssr {
+		left: 1135px;
+		bottom: 68px;
+		position: absolute;
+		width: 177px;
+		height: 54px;
+		background-image: url('../images/hero-filter-ssr.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.hero-filter-sr {
+		left: 1320px;
+		bottom: 68px;
+		position: absolute;
+		width: 177px;
+		height: 54px;
+		background-image: url('../images/hero-filter-sr.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.hero-filter-r {
+		left: 1505px;
+		bottom: 68px;
+		position: absolute;
+		width: 177px;
+		height: 54px;
+		background-image: url('../images/hero-filter-r.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.hero-filter-n {
+		left: 1690px;
+		bottom: 68px;
+		position: absolute;
+		width: 177px;
+		height: 54px;
+		background-image: url('../images/hero-filter-n.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.hero-level {
+		left: 10px;
+		top: 320px;
+		position: absolute;
+		width: 348px;
+		height: 169px;
+		background-image: url('../images/hero-level.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 50px 0px 0px 70px;
+		color: #fff;
+		text-align: left;
+		font-size: 68px;
+	}
+	.hero-level .hero-levelup-button {
+		right: 30px;
+		top: 80px;
+		position: absolute;
+		width: 53px;
+		height: 51px;
+		background-image: url('../images/hero-levelup-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.hero-stat-title {
+		left: 10px;
+		top: 500px;
+		position: absolute;
+		width: 358px;
+		height: 36px;
+		background-image: url('../images/hero-stat-title.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.nft-hp-area {
+		left: 30px;
+		top: 550px;
+		position: absolute;
+		width: 222px;
+		height: 28px;
+		background-image: url('../images/hero-hp.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 0px 60px 0px 80px;
+		color: #fff;
+		text-align: right;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	.nft-atk-area {
+		left: 30px;
+		top: 590px;
+		position: absolute;
+		width: 222px;
+		height: 28px;
+		background-image: url('../images/hero-atk.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 0px 60px 0px 80px;
+		color: #fff;
+		text-align: right;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	.nft-armor-area {
+		left: 30px;
+		top: 630px;
+		position: absolute;
+		width: 222px;
+		height: 28px;
+		background-image: url('../images/hero-armor.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 0px 60px 0px 80px;
+		color: #fff;
+		text-align: right;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	.nft-crit-area {
+		left: 30px;
+		top: 670px;
+		position: absolute;
+		width: 222px;
+		height: 28px;
+		background-image: url('../images/hero-crit.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 0px 60px 0px 80px;
+		color: #fff;
+		text-align: right;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	.nft-magicpower-area {
+		left: 30px;
+		top: 710px;
+		position: absolute;
+		width: 222px;
+		height: 28px;
+		background-image: url('../images/hero-magicpower.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 0px 60px 0px 80px;
+		color: #fff;
+		text-align: right;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	.nft-magicresist-area {
+		left: 30px;
+		top: 750px;
+		position: absolute;
+		width: 222px;
+		height: 28px;
+		background-image: url('../images/hero-magicresist.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 0px 60px 0px 80px;
+		color: #fff;
+		text-align: right;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	.nft-block-area {
+		left: 30px;
+		top: 790px;
+		position: absolute;
+		width: 222px;
+		height: 28px;
+		background-image: url('../images/hero-block.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 0px 60px 0px 80px;
+		color: #fff;
+		text-align: right;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	.hero-nametag {
+		left: 0px;
+		bottom: 70px;
+		position: absolute;
+		width: 660px;
+		height: 186px;
+		background-image: url('../images/hero-nametag.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.nft-sta-area {
+		left: 28px;
+		bottom: 20px;
+		position: absolute;
+		width: 220px;
+		height: 50px;
+		background-image: url('../images/hero-sta.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 0px 60px 0px 80px;
+		color: #fff;
+		text-align: right;
+		font-size: 28px;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	.hero-upgrade-button {
+		left: 680px;
+		bottom: 52px;
+		position: absolute;
+		width: 205px;
+		height: 273px;
+		background-image: url('../images/hero-upgrade-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		padding: 220px 60px 10px 40px;
+		color: #fff;
+		text-align: right;
+	}
+}
+
+@media screen and (orientation:portrait) {
+	.hero-background {
+		position: relative;
+		margin: 0 auto;
+		width: 1080px;
+		height: 1920px;
+		background-image: url('../images/hero-background.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		font-size: 20px;
+	}
+	.hero-title {
+		left: 176px;
+		top: 40px;
+		position: absolute;
+		width: 665px;
+		height: 88px;
+		background-image: url('../images/hero-title.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.token-coin {
+		right: 745px;
+		top: 268px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-coin.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-coin .token-coin-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 53px;
+		height: 51px;
+		background-image: url('../images/token-coin-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.token-subcoin {
+		right: 415px;
+		top: 268px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-subcoin.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-subcoin .token-subcoin-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 53px;
+		height: 51px;
+		background-image: url('../images/token-subcoin-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.token-bnb {
+		right: 83px;
+		top: 268px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-bnb.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-bnb .token-bnb-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 108px;
+		height: 51px;
+		background-image: url('../images/token-bnb-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.back-button {
+		left: 20px;
+		top: 30px;
+		position: absolute;
+		width: 218px;
+		height: 231px;
+		background-image: url('../images/back-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.nft-list-area {
+		left: 0px;
+		top: 1060px;
+		position: absolute;
+		width: 1080px;
+		height: 720px;
+		/*background-image: url('../images/list-border-pc.png');*/
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 0px 20px;
+		overflow-y: scroll;
+	}
+	.nft-list-area .list-area {
+		height: 714px;
+	}
+	.nft-slot {
+		width: 219px;
+		height: 269px;
+		background-image: url('../images/nft-slot.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.nft-small-card {
+		width: 219px;
+		height: 269px;
+		/*background-image: url('../images/nft-small-card-1.png');*/
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		padding: 188px 0px 0px 150px;
+		color: #fff;
+		text-align: left;
+	}
+	.nft-avatar-card {
+		right: 100px;
+		top: 330px;
+		position: absolute;
+		width: calc(688px * 0.8);
+		height: calc(885px * 0.8);
+		/*background-image: url('../images/worker-big-card-1.png');*/
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.hero-filter-all {
+		left: 50px;
+		bottom: 68px;
+		position: absolute;
+		width: 177px;
+		height: 54px;
+		background-image: url('../images/hero-filter-all.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.hero-filter-ssr {
+		left: 250px;
+		bottom: 68px;
+		position: absolute;
+		width: 177px;
+		height: 54px;
+		background-image: url('../images/hero-filter-ssr.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.hero-filter-sr {
+		left: 450px;
+		bottom: 68px;
+		position: absolute;
+		width: 177px;
+		height: 54px;
+		background-image: url('../images/hero-filter-sr.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.hero-filter-r {
+		left: 650px;
+		bottom: 68px;
+		position: absolute;
+		width: 177px;
+		height: 54px;
+		background-image: url('../images/hero-filter-r.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.hero-filter-n {
+		left: 850px;
+		bottom: 68px;
+		position: absolute;
+		width: 177px;
+		height: 54px;
+		background-image: url('../images/hero-filter-n.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.hero-level {
+		left: 20px;
+		top: 340px;
+		position: absolute;
+		width: 348px;
+		height: 169px;
+		background-image: url('../images/hero-level.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 50px 0px 0px 70px;
+		color: #fff;
+		text-align: left;
+		font-size: 68px;
+	}
+	.hero-level .hero-levelup-button {
+		right: 0px;
+		top: 80px;
+		position: absolute;
+		width: 53px;
+		height: 51px;
+		background-image: url('../images/hero-levelup-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.hero-stat-title {
+		left: 10px;
+		top: 520px;
+		position: absolute;
+		width: 358px;
+		height: 36px;
+		background-image: url('../images/hero-stat-title.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.nft-hp-area {
+		left: 30px;
+		top: 570px;
+		position: absolute;
+		width: 222px;
+		height: 28px;
+		background-image: url('../images/hero-hp.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 0px 60px 0px 80px;
+		color: #fff;
+		text-align: right;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	.nft-atk-area {
+		left: 30px;
+		top: 610px;
+		position: absolute;
+		width: 222px;
+		height: 28px;
+		background-image: url('../images/hero-atk.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 0px 60px 0px 80px;
+		color: #fff;
+		text-align: right;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	.nft-armor-area {
+		left: 30px;
+		top: 650px;
+		position: absolute;
+		width: 222px;
+		height: 28px;
+		background-image: url('../images/hero-armor.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 0px 60px 0px 80px;
+		color: #fff;
+		text-align: right;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	.nft-crit-area {
+		left: 30px;
+		top: 690px;
+		position: absolute;
+		width: 222px;
+		height: 28px;
+		background-image: url('../images/hero-crit.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 0px 60px 0px 80px;
+		color: #fff;
+		text-align: right;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	.nft-magicpower-area {
+		left: 30px;
+		top: 730px;
+		position: absolute;
+		width: 222px;
+		height: 28px;
+		background-image: url('../images/hero-magicpower.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 0px 60px 0px 80px;
+		color: #fff;
+		text-align: right;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	.nft-magicresist-area {
+		left: 30px;
+		top: 770px;
+		position: absolute;
+		width: 222px;
+		height: 28px;
+		background-image: url('../images/hero-magicresist.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 0px 60px 0px 80px;
+		color: #fff;
+		text-align: right;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	.nft-block-area {
+		left: 30px;
+		top: 810px;
+		position: absolute;
+		width: 222px;
+		height: 28px;
+		background-image: url('../images/hero-block.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 0px 60px 0px 80px;
+		color: #fff;
+		text-align: right;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	.hero-nametag {
+		left: 0px;
+		top: 860px;
+		position: absolute;
+		width: 660px;
+		height: 186px;
+		background-image: url('../images/hero-nametag.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.nft-sta-area {
+		left: 288px;
+		top: 788px;
+		position: absolute;
+		width: 220px;
+		height: 50px;
+		background-image: url('../images/hero-sta.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 0px 60px 0px 80px;
+		color: #fff;
+		text-align: right;
+		font-size: 28px;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	.hero-upgrade-button {
+		right: 30px;
+		top: 780px;
+		position: absolute;
+		width: 205px;
+		height: 273px;
+		background-image: url('../images/hero-upgrade-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		padding: 220px 60px 10px 40px;
+		color: #fff;
+		text-align: right;
+	}
+}
+
+#confirmBox .modal-dialog {
+	width: 1562px;
+	max-width: 1562px;
+	height: 776px;
+	min-height: 776px;
+	margin: calc((100vh - 776px) / 2) auto;
+}
+#confirmBox .modal-content {
+	background-color: transparent !important;
+	background-image: url('../images/confirm-box.png');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#confirmBox .modal-body {
+	background-color: transparent !important;
+	text-align: center;
+	color: #241814;
+	font-size: 38px;
+	min-height: 606px;
+	padding: 300px 0px 0px 0px !important;
+}
+#confirmBox .modal-footer {
+	border: 0px !important;
+}
+#confirmBox .btn-yes {
+	width: 376px;
+	height: 124px;
+	background-image: url('../images/confirm-box-yes.png');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	filter: grayscale(100%);
+}
+#confirmBox .btn-no {
+	width: 376px;
+	height: 124px;
+	background-image: url('../images/confirm-box-cancel.png');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	filter: grayscale(100%);
+}
+#confirmBox button:hover {
+	filter: grayscale(0%);
+}

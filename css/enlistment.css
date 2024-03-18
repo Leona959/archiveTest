@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* general */
+@font-face {
+	font-family: 'SFTransRobotics';
+	src: url('../images/SFTransRobotics.ttf'); /* IE9 Compat Modes */
+	src: url('../images/SFTransRobotics.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../images/SFTransRobotics.ttf') format('woff'), /* Modern Browsers */
+	url('../images/SFTransRobotics.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	font-family: SFTransRobotics;
+	-webkit-text-size-adjust: 100%;
+	background-color: #333;
+}
+
+@media screen and (orientation:landscape) {
+	.enlistment-background {
+		position: relative;
+		margin: 0 auto;
+		width: 1920px;
+		height: 1080px;
+		background-image: url('../images/enlistment-background.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		font-size: 20px;
+	}
+	.next-button {
+		right: 40px;
+		bottom: 40px;
+		position: absolute;
+		width: 376px;
+		height: 124px;
+		background-image: url('../images/next-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.enlistment-1-area {
+		left: 0px;
+		bottom: 100px;
+		position: absolute;
+		width: 1920px;
+		height: 812px;
+		/*background-image: url('../images/next-button.png');*/
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.nft-avatar-card {
+		left: 680px;
+		bottom: -100px;
+		position: absolute;
+		width: 688px;
+		height: 885px;
+		/*background-image: url('../images/worker-big-card-1.png');*/
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.enlistment-10-area {
+		left: 170px;
+		top: 220px;
+		position: absolute;
+		width: 1500px;
+		height: auto;
+	}
+	.enlistment-10-title {
+		left: 425px;
+		top: -130px;
+		position: absolute;
+		width: 620px;
+		height: 111px;
+		background-image: url('../images/enlistment-10-title.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.nft-small-card {
+		float: left;
+		margin-left: 81px;
+		width: 219px;
+		height: 269px;
+		/*background-image: url('../images/nft-small-card-1.png');*/
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		padding: 188px 0px 0px 150px;
+		color: #fff;
+		text-align: left;
+	}
+}
+
+@media screen and (orientation:portrait) {
+	.enlistment-background {
+		position: relative;
+		margin: 0 auto;
+		width: 1080px;
+		height: 1920px;
+		background-image: url('../images/enlistment-background.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		font-size: 20px;
+	}
+	.next-button {
+		right: 40px;
+		bottom: 40px;
+		position: absolute;
+		width: 376px;
+		height: 124px;
+		background-image: url('../images/next-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+}

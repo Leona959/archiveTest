@@ -1,0 +1,800 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* general */
+@font-face {
+	font-family: 'SFTransRobotics';
+	src: url('../images/SFTransRobotics.ttf'); /* IE9 Compat Modes */
+	src: url('../images/SFTransRobotics.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../images/SFTransRobotics.ttf') format('woff'), /* Modern Browsers */
+	url('../images/SFTransRobotics.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	font-family: SFTransRobotics;
+	-webkit-text-size-adjust: 100%;
+	background-color: #333;
+}
+
+@media screen and (orientation:landscape) {
+	.home-background {
+		position: relative;
+		margin: 0 auto;
+		width: 1920px;
+		height: 1080px;
+		background-image: url('../images/home-background.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		font-size: 20px;
+	}
+	.wallet-area {
+		left: 50px;
+		top: 20px;
+		position: absolute;
+		width: 624px;
+		height: 195px;
+		background-image: url('../images/wallet-area.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 128px 40px 88px 68px;
+		color: #fff;
+		text-align: center;
+	}
+	.button-background {
+		right: 0px;
+		top: 250px;
+		position: absolute;
+		width: 772px;
+		height: 230px;
+		background-image: url('../images/button-background.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.recruit-button {
+		right: 300px;
+		top: 276px;
+		position: absolute;
+		width: 524px;
+		height: 160px;
+		background-image: url('../images/recruit-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.mission-button {
+		right: 30px;
+		top: 280px;
+		position: absolute;
+		width: 243px;
+		height: 157px;
+		background-image: url('../images/mission-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.hero-button {
+		right: 534px;
+		top: 453px;
+		position: absolute;
+		width: 316px;
+		height: 213px;
+		background-image: url('../images/hero-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.team-button {
+		right: 0px;
+		top: 469px;
+		position: absolute;
+		width: 513px;
+		height: 212px;
+		background-image: url('../images/team-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.warfare-button {
+		right: 32px;
+		top: 668px;
+		position: absolute;
+		width: 791px;
+		height: 381px;
+		background-image: url('../images/warfare-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.referral-button {
+		left: 28px;
+		bottom: 280px;
+		position: absolute;
+		width: 215px;
+		height: 225px;
+		background-image: url('../images/referral-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.betting-button {
+		left: 40px;
+		bottom: 30px;
+		position: absolute;
+		width: 546px;
+		height: 258px;
+		background-image: url('../images/betting-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.info-button {
+		right: 200px;
+		top: 150px;
+		position: absolute;
+		width: 93px;
+		height: 93px;
+		background-image: url('../images/info-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.sound-button {
+		right: 40px;
+		top: 150px;
+		position: absolute;
+		width: 98px;
+		height: 92px;
+		background-image: url('../images/sound-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.avatar-area {
+		left: 238px;
+		bottom: 0px;
+		position: absolute;
+		width: 688px;
+		height: 885px;
+		background-image: url('../images/nft/avatar/nft-avatar-card-00001.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.token-coin {
+		right: 760px;
+		top: 62px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-coin.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-coin .token-coin-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 53px;
+		height: 51px;
+		background-image: url('../images/token-coin-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.token-subcoin {
+		right: 430px;
+		top: 62px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-subcoin.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-subcoin .token-subcoin-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 53px;
+		height: 51px;
+		background-image: url('../images/token-subcoin-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.token-bnb {
+		right: 98px;
+		top: 62px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-bnb.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.airdrop-button {
+		background-image: url('../images/airdrop_button.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		position:absolute;
+		top: 170px;
+		left: 600px;
+		width: 180px; /* Adjust the width as needed */
+		height: 54px; /* Adjust the height as needed */
+		border: none;
+		background-position:centre,centre;
+		cursor: pointer;
+		padding: 0;
+		margin: 0;
+		z-index: 10;
+	}
+	/*.token-bnb .token-bnb-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 108px;
+		height: 51px;
+		background-image: null;
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}*/
+	.popup {
+		display: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 20px;
+		z-index: 10;
+		background-image: url(../images/modal_frame1.png);
+		/* background-image: url(../images/modal_frame1.png); */
+		background-size: 100%;
+		width: 790px;
+		height: 440px;
+	}
+	
+	.overlay {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		z-index: 9;
+	}
+	
+	.closeBtn {
+		float: right;
+	}
+	
+	.closeBtn>img {
+		width: 60px;
+		height: 60px;
+	}
+	
+	.myPopupLInk {
+		font-size: 21px;
+		color: white;
+	}
+	
+	.myPopupReferral {
+		font-size: 18px;
+		width: 100%;
+		color: white;
+		
+	}
+	.copyReferral{
+		float: right;
+	}
+	.copyReferral>img{
+		width: 30px;
+		height: 30px;
+		/* position: absolute; */
+		
+	}
+	
+	
+	a {
+		text-decoration: none;
+		color: #87D4FF;
+		/* color: white; */
+		/* white-space: normal; */
+	}
+	
+}
+
+@media screen and (orientation:portrait) {
+	.home-background {
+		position: relative;
+		margin: 0 auto;
+		width: 1080px;
+		height: 1920px;
+		background-image: url('../images/home-background.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		font-size: 20px;
+	}
+	.wallet-area {
+		left: 30px;
+		top: 20px;
+		position: absolute;
+		width: 624px;
+		height: 195px;
+		background-image: url('../images/wallet-area.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 128px 40px 88px 68px;
+		color: #fff;
+		text-align: center;
+	}
+	.token-coin {
+		left: 30px;
+		top: 422px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-coin.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-coin .token-coin-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 53px;
+		height: 51px;
+		background-image: url('../images/token-coin-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.token-subcoin {
+		left: 30px;
+		top: 330px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-subcoin.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-subcoin .token-subcoin-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 53px;
+		height: 51px;
+		background-image: url('../images/token-subcoin-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.token-bnb {
+		left: 30px;
+		top: 238px;
+		position: absolute;
+		width: 313px;
+		height: 71px;
+		background-image: url('../images/token-bnb.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 12px 88px 12px 88px;
+		color: #fff;
+		text-align: right;
+		font-size: 26px;
+	}
+	.token-bnb .token-bnb-button {
+		left: 260px;
+		top: 5px;
+		position: absolute;
+		width: 108px;
+		height: 51px;
+		background-image: url('../images/token-bnb-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.referral-button {
+		left: 0px;
+		bottom: 580px;
+		position: absolute;
+		width: 215px;
+		height: 225px;
+		background-image: url('../images/referral-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.betting-button {
+		left: 30px;
+		bottom: 100px;
+		position: absolute;
+		width: calc(546px * 0.8);
+		height: calc(258px * 0.8);
+		background-image: url('../images/betting-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.info-button {
+		right: 170px;
+		top: 80px;
+		position: absolute;
+		width: 93px;
+		height: 93px;
+		background-image: url('../images/info-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.sound-button {
+		right: 10px;
+		top: 80px;
+		position: absolute;
+		width: 98px;
+		height: 92px;
+		background-image: url('../images/sound-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.avatar-area {
+		right: 30px;
+		top: 220px;
+		position: absolute;
+		width: 688px;
+		height: 885px;
+		background-image: url('../images/nft/avatar/nft-avatar-card-00001.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.button-background {
+		right: 0px;
+		top: 1110px;
+		position: absolute;
+		width: 772px;
+		height: 230px;
+		background-image: url('../images/button-background.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.recruit-button {
+		left: 220px;
+		top: 1135px;
+		position: absolute;
+		width: 524px;
+		height: 160px;
+		background-image: url('../images/recruit-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.mission-button {
+		left: 810px;
+		top: 1140px;
+		position: absolute;
+		width: 243px;
+		height: 157px;
+		background-image: url('../images/mission-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.hero-button {
+		left: 180px;
+		top: 1345px;
+		position: absolute;
+		width: 316px;
+		height: 213px;
+		background-image: url('../images/hero-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.team-button {
+		right: 0px;
+		top: 1355px;
+		position: absolute;
+		width: 513px;
+		height: 212px;
+		background-image: url('../images/team-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.warfare-button {
+		right: 20px;
+		bottom: 60px;
+		position: absolute;
+		width: calc(791px * 0.7);
+		height: calc(381px * 0.7);
+		background-image: url('../images/warfare-button.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.airdrop-button {
+		background-image: url('../images/airdrop_button.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		position:absolute;
+		top: 170px;
+		left: 600px;
+		width: 180px; /* Adjust the width as needed */
+		height: 54px; /* Adjust the height as needed */
+		border: none;
+		background-position:centre,centre;
+		cursor: pointer;
+		padding: 0;
+		margin: 0;
+		z-index: 10;
+	}
+
+	.popup {
+		display: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 20px;
+		z-index: 10;
+		background-image: url(../images/modal_frame1.png);
+		/* background-image: url(../images/modal_frame1.png); */
+		background-size: 100%;
+		width: 790px;
+		height: 440px;
+	}
+	
+	.overlay {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		z-index: 9;
+	}
+	
+	.closeBtn {
+		float: right;
+	}
+	
+	.closeBtn>img {
+		width: 60px;
+		height: 60px;
+	}
+	
+	.myPopupLInk {
+		font-size: 21px;
+		color: white;
+	}
+	
+	.myPopupReferral {
+		font-size: 18px;
+		width: 100%;
+		color: white;
+	}
+	.copyReferral{
+		float: right;
+	}
+	.copyReferral>img{
+		width: 30px;
+		height: 30px;
+		/* position: absolute; */
+		
+	}
+	
+	
+	a {
+		text-decoration: none;
+		color: #87D4FF;
+		/* color: white; */
+		/* white-space: normal; */
+	}
+	
+}
+
+
+
+
+.modal-body {
+	background-color: #333 !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.modal-fullscreen {
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 100% !important;
+}
+#preloaderDT {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index: 500000;
+	background: rgba(173, 68, 2, 0.2);
+}
+/* Absolute Center Spinner */
+.loading {
+	position: fixed;
+	z-index: 999;
+	height: 2em;
+	width: 2em;
+	overflow: show;
+	margin: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+} 
+/* Transparent Overlay */
+.loading:before {
+	content: '';
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(rgba(20, 20, 20,.8), rgba(173, 68, 2, 0.2));
+	background: -webkit-radial-gradient(rgba(20, 20, 20,.8), rgba(173, 68, 2, 0.2));
+} 
+/* :not(:required) hides these rules from IE9 and below */
+.loading:not(:required) {
+/* hide "loading..." text */
+	font: 0/0 a;
+	color: transparent;
+	text-shadow: none;
+	background-color: transparent;
+	border: 0;
+}
+  
+.loading:not(:required):after {
+	content: '';
+	display: block;
+	font-size: 10px;
+	width: 1em;
+	height: 1em;
+	margin-top: -0.5em;
+	-webkit-animation: spinner 150ms infinite linear;
+	-moz-animation: spinner 150ms infinite linear;
+	-ms-animation: spinner 150ms infinite linear;
+	-o-animation: spinner 150ms infinite linear;
+	animation: spinner 150ms infinite linear;
+	border-radius: 0.5em;
+	-webkit-box-shadow: rgba(255,255,255, 0.75) 1.5em 0 0 0, rgba(255,255,255, 0.75) 1.1em 1.1em 0 0, rgba(255,255,255, 0.75) 0 1.5em 0 0, rgba(255,255,255, 0.75) -1.1em 1.1em 0 0, rgba(255,255,255, 0.75) -1.5em 0 0 0, rgba(255,255,255, 0.75) -1.1em -1.1em 0 0, rgba(255,255,255, 0.75) 0 -1.5em 0 0, rgba(255,255,255, 0.75) 1.1em -1.1em 0 0;
+	box-shadow: rgba(255,255,255, 0.75) 1.5em 0 0 0, rgba(255,255,255, 0.75) 1.1em 1.1em 0 0, rgba(255,255,255, 0.75) 0 1.5em 0 0, rgba(255,255,255, 0.75) -1.1em 1.1em 0 0, rgba(255,255,255, 0.75) -1.5em 0 0 0, rgba(255,255,255, 0.75) -1.1em -1.1em 0 0, rgba(255,255,255, 0.75) 0 -1.5em 0 0, rgba(255,255,255, 0.75) 1.1em -1.1em 0 0;
+}
+  
+/* Animation */
+
+@-webkit-keyframes spinner {
+	0% {
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+	}
+	@-moz-keyframes spinner {
+	0% {
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@-o-keyframes spinner {
+	0% {
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+	}
+	@keyframes spinner {
+	0% {
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}

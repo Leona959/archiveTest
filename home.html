@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Sol hero</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/home.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/function.js"></script>
+	<script src="js/home.js"></script>
+	<script src="js/connectwallet.js"></script>
+</head>
+<style>
+	.auto-wrap {
+		width: 95%;
+		word-wrap: break-word;
+		white-space: normal;
+	}
+</style>
+
+<body>
+	<div class="home-background">
+		<div class="content-area-landscape content-area-portrait">
+		</div>
+		<button id="airdrop-button" class="airdrop-button" onclick="checkBalance()"></button>
+
+		<div class="wallet-area">
+			<div id="wallet-address"></div>
+			<button id="connect-button" onclick="connectWallet()">Connect Wallet</button>
+			<button id="disconnect-button" onclick="disconnectWallet()">Disconnect Wallet</button>
+
+		</div>
+
+
+		<div class="button-background"></div>
+
+		<div class="avatar-area"></div>
+
+		<a href="#!recruit" class="clickopen" id="recruit">
+			<div class="recruit-button"></div>
+		</a>
+		<a href="#!mission" class="clickopen" id="mission">
+			<div class="mission-button"></div>
+		</a>
+		<a href="#!hero" class="clickopen" id="hero">
+			<div class="hero-button"></div>
+		</a>
+		<a href="#!team" class="clickopen" id="team">
+			<div class="team-button"></div>
+		</a>
+		<a href="#!warfare" class="clickopen" id="warfare">
+			<div class="warfare-button"></div>
+		</a>
+		<a href="#!betting" class="clickopen" id="betting">
+			<div class="betting-button"></div>
+		</a>
+
+		<button class="referral-button" onclick="checkBalance()" style="background-color: transparent;border: 0;"></button>
+
+		<div class="info-button"></div>
+		<div class="sound-button"></div>
+
+		<div class="token-coin">
+			0
+			<div class="token-coin-button"></div>
+		</div>
+		<div class="token-subcoin">
+			0
+			<div class="token-subcoin-button"></div>
+		</div>
+		<div id="myPopup" class="popup">
+			<span id="closeBtn" class="closeBtn">
+				<img src="./images/x.png">
+			</span>
+			<div>
+				<p style="color: white;font-size: 28px;padding-left: 13px;margin-top: 60px;padding-left: 30px;padding-right: 50px;">
+					You are now inside the airdrop list,
+					please come back to sign in this game tomorrow to maximize your airdrop.
+				</p>
+			</div>
+			<div style="margin-left: 30px;">
+				<div class=" myPopupReferral">
+					<div class="row justify-content-between">
+						<div class="col">
+							<p style="font-size: 20px;position: relative; top: 15px;align-items: center;">Referral link:
+							</p>
+						</div>
+						<div class="col">
+							<a class="copyReferral" href="###" id="copyReferral"
+								style="margin-left: 20px;color: #87D4FF;">
+								<img src="./images/Copy.png">
+							</a>
+						</div>
+					</div> 
+					<a id="remain" class="auto-wrap" href="###"></a>
+					<!-- <a class="copyReferral" href="###" id="copyReferral" style="margin-left: 20px;color: #87D4FF;">
+						<img src="./images/Copy.png">
+					</a> -->
+				</div>
+				<div style="margin-top: 40px;margin-left: 80px;">
+					<div>
+						<a class="myPopupLInk" href="https://t.me/SOL_HERO" >Telegram: https://t.me/SOL_HERO</a>
+					</div>
+					<div>
+						<a class="myPopupLInk" href="https://Twitter.com/_SOLHERO">Twitter: https://Twitter.com/_SOLHERO</a>
+					</div>
+				</div>
+				
+				
+			</div>
+
+		</div>
+		<div class="token-bnb">
+			0
+			<div class="token-bnb-button"></div>
+		</div>
+
+		<div id="preloaderDT">
+			<div class="loading"></div>
+		</div>
+		<div id="forCopy"></div>
+
+		<div id="main" class="modal">
+			<div class="modal-dialog modal-fullscreen">
+				<div class="modal-content">
+					<div class="modal-body d-flex align-items-center">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+<!-- Popup弹窗 -->
+<script>
+	var closeBtn = document.getElementById('closeBtn');
+	var myPopup = document.getElementById('myPopup');
+	var copyReferral = document.getElementById('copyReferral');
+
+	function checkBalance() {
+		var divContent = document.getElementById('wallet-address').innerHTML;
+		// alert(divContent)
+
+		document.getElementById('remain').innerHTML = "https://game.sol-hero.com/referral/" + divContent;
+		document.getElementById('remain').href = "http://game.sol-hero.com/referral/" + divContent;
+		if (divContent != "") {
+			myPopup.style.display = 'block';	
+
+		}
+
+	}
+	copyReferral.onclick = function () {
+
+	  var copyReferral = document.getElementById('remain').innerHTML;
+	//   alert(copyReferral)
+	navigator.clipboard
+    .writeText(copyReferral)
+    .then(() => {
+		console.log('复制成功')
+    })
+    .catch(() => {
+      const input = document.createElement('input')
+      document.body.appendChild(input)
+      input.setAttribute('value', copyReferral)
+      input.select()
+      if (document.execCommand('copy')) {
+        document.execCommand('copy')
+      }
+      document.body.removeChild(input)
+      console.log('复制成功')
+    })
+		// var copyReferral = document.getElementById('remain').href;
+		// // 使用新的Clipboard API复制文本到剪贴板
+		// navigator.clipboard.writeText(copyReferral).then(function () {
+		// 	console.log('内容已复制到剪贴板');
+		// }).catch(function (error) {
+		// 	console.error('复制失败', error);
+		// });
+	}
+	    // 先给要复制的文本或者按钮加上点击事件后，并将要复制的值传过来
+		
+
+	closeBtn.onclick = function () {
+		myPopup.style.display = 'none';
+	}
+</script>
+<!-- 监听拦截部分链接 -->
+<script>
+	document.addEventListener('DOMContentLoaded', (event) => {
+		document.addEventListener('click', (event) => {
+			const target = event.target;
+			if (target.tagName === 'A' && target.href.includes('referral')) {
+				// 阻止默认行为
+				event.preventDefault();
+				// 跳转到指定页面
+				// window.location.href = 'http://localhost:80/home.html';
+			}
+		});
+	});
+</script>
+
+</html>

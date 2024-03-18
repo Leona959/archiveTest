@@ -1,0 +1,718 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* general */
+@font-face {
+	font-family: 'SFTransRobotics';
+	src: url('../images/SFTransRobotics.ttf'); /* IE9 Compat Modes */
+	src: url('../images/SFTransRobotics.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../images/SFTransRobotics.ttf') format('woff'), /* Modern Browsers */
+	url('../images/SFTransRobotics.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	font-family: SFTransRobotics;
+	-webkit-text-size-adjust: 100%;
+	background-color: #333;
+}
+
+.modal-body {
+	background-color: #333 !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.modal-fullscreen {
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 100% !important;
+}
+
+
+
+#preloaderDT {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 500000;
+    background: rgba(173, 68, 2, 0.2);
+}
+
+
+/* Absolute Center Spinner */
+.loading {
+	position: fixed;
+	z-index: 999;
+	height: 2em;
+	width: 2em;
+	overflow: show;
+	margin: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+  }
+  
+  /* Transparent Overlay */
+  .loading:before {
+	content: '';
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	  background: radial-gradient(rgba(20, 20, 20,.8), rgba(173, 68, 2, 0.2));
+  
+	background: -webkit-radial-gradient(rgba(20, 20, 20,.8), rgba(173, 68, 2, 0.2));
+  }
+  
+  /* :not(:required) hides these rules from IE9 and below */
+  .loading:not(:required) {
+	/* hide "loading..." text */
+	font: 0/0 a;
+	color: transparent;
+	text-shadow: none;
+	background-color: transparent;
+	border: 0;
+  }
+  
+  .loading:not(:required):after {
+	content: '';
+	display: block;
+	font-size: 10px;
+	width: 1em;
+	height: 1em;
+	margin-top: -0.5em;
+	-webkit-animation: spinner 150ms infinite linear;
+	-moz-animation: spinner 150ms infinite linear;
+	-ms-animation: spinner 150ms infinite linear;
+	-o-animation: spinner 150ms infinite linear;
+	animation: spinner 150ms infinite linear;
+	border-radius: 0.5em;
+	-webkit-box-shadow: rgba(255,255,255, 0.75) 1.5em 0 0 0, rgba(255,255,255, 0.75) 1.1em 1.1em 0 0, rgba(255,255,255, 0.75) 0 1.5em 0 0, rgba(255,255,255, 0.75) -1.1em 1.1em 0 0, rgba(255,255,255, 0.75) -1.5em 0 0 0, rgba(255,255,255, 0.75) -1.1em -1.1em 0 0, rgba(255,255,255, 0.75) 0 -1.5em 0 0, rgba(255,255,255, 0.75) 1.1em -1.1em 0 0;
+  box-shadow: rgba(255,255,255, 0.75) 1.5em 0 0 0, rgba(255,255,255, 0.75) 1.1em 1.1em 0 0, rgba(255,255,255, 0.75) 0 1.5em 0 0, rgba(255,255,255, 0.75) -1.1em 1.1em 0 0, rgba(255,255,255, 0.75) -1.5em 0 0 0, rgba(255,255,255, 0.75) -1.1em -1.1em 0 0, rgba(255,255,255, 0.75) 0 -1.5em 0 0, rgba(255,255,255, 0.75) 1.1em -1.1em 0 0;
+  }
+  
+  /* Animation */
+  
+  @-webkit-keyframes spinner {
+	0% {
+	  -webkit-transform: rotate(0deg);
+	  -moz-transform: rotate(0deg);
+	  -ms-transform: rotate(0deg);
+	  -o-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	}
+	100% {
+	  -webkit-transform: rotate(360deg);
+	  -moz-transform: rotate(360deg);
+	  -ms-transform: rotate(360deg);
+	  -o-transform: rotate(360deg);
+	  transform: rotate(360deg);
+	}
+  }
+  @-moz-keyframes spinner {
+	0% {
+	  -webkit-transform: rotate(0deg);
+	  -moz-transform: rotate(0deg);
+	  -ms-transform: rotate(0deg);
+	  -o-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	}
+	100% {
+	  -webkit-transform: rotate(360deg);
+	  -moz-transform: rotate(360deg);
+	  -ms-transform: rotate(360deg);
+	  -o-transform: rotate(360deg);
+	  transform: rotate(360deg);
+	}
+  }
+  @-o-keyframes spinner {
+	0% {
+	  -webkit-transform: rotate(0deg);
+	  -moz-transform: rotate(0deg);
+	  -ms-transform: rotate(0deg);
+	  -o-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	}
+	100% {
+	  -webkit-transform: rotate(360deg);
+	  -moz-transform: rotate(360deg);
+	  -ms-transform: rotate(360deg);
+	  -o-transform: rotate(360deg);
+	  transform: rotate(360deg);
+	}
+  }
+  @keyframes spinner {
+	0% {
+	  -webkit-transform: rotate(0deg);
+	  -moz-transform: rotate(0deg);
+	  -ms-transform: rotate(0deg);
+	  -o-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	}
+	100% {
+	  -webkit-transform: rotate(360deg);
+	  -moz-transform: rotate(360deg);
+	  -ms-transform: rotate(360deg);
+	  -o-transform: rotate(360deg);
+	  transform: rotate(360deg);
+	}
+  }
+
+
+#okDialogBox, #okDialogBox2 {
+	 background-color: rgba(0, 0, 0, .8);
+}
+#okDialogBox .modal-dialog, #okDialogBox2 .modal-dialog {
+	max-width: 938px !important;
+	width: 938px !important;
+	max-height: 381px !important;
+	height: 381px !important;
+}
+#okDialogBox .modal-content,#okDialogBox2 .modal-content  {
+	background-color: transparent !important;
+	border: 0;
+}
+#okDialogBox .modal-body, #okDialogBox2 .modal-body {
+	background-color: transparent !important;
+	background-size: cover;
+	background-image: url('../images/popup-bg.png');
+	background-repeat: no-repeat;
+	width: 938px;
+	height: 381px;
+	/* color: rgb(33, 37, 41) !important; */
+}
+#okDialogBox .modal-footer, #okDialogBox2 .modal-footer {
+	border: 0;
+}
+#okDialogBox .ok, #okDialogBox2 .ok {
+	width: 343px;
+	height: 99px;
+	background-size: cover;
+	background-image: url('../images/ok.png');
+	background-color: transparent;
+	position: absolute;
+	top: 315px;
+	border: 0 !important;
+	cursor: pointer;
+	color: #fff;
+}
+#errorMessages {
+	padding: 138px 0px !important;
+	text-align: center !important;
+}
+#confirmMessages {
+	padding: 138px 0px !important;
+	text-align: center !important;
+}
+
+
+
+#confirmDialogBox {
+	background-color: rgba(0, 0, 0, .8);
+}
+#confirmDialogBox .modal-dialog {
+	max-width: 938px !important;
+	width: 938px !important;
+	max-height: 381px !important;
+	height: 381px !important;
+}
+#confirmDialogBox .modal-content {
+	background-color: transparent !important;
+	border: 0;
+}
+#confirmDialogBox .modal-body {
+	background-color: transparent !important;
+	background-size: cover;
+	background-image: url('../images/popup-bg.png');
+	background-repeat: no-repeat;
+	width: 938px;
+	height: 381px;
+	/* color: rgb(33, 37, 41) !important; */
+}
+#confirmDialogBox .modal-footer {
+	border: 0;
+}
+#confirmDialogBox #confirmMessages {
+	text-align: center;
+}
+#confirmDialogBox #confirmPress {
+	width: 308px;
+	height: 94px;
+	background-size: cover;
+	background-image: url('../images/recruit-yes.png');
+	background-color: transparent;
+	position: absolute;
+	top: 320px;
+	right: 0px;
+	border: 0 !important;
+	cursor: pointer;
+}
+#confirmDialogBox #cancelPress {
+	width: 308px;
+	height: 94px;
+	background-size: cover;
+	background-image: url('../images/recruit-no.png');
+	background-color: transparent;
+	position: absolute;
+	top: 320px;
+	left: 0px;
+	border: 0 !important;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+@media screen and (orientation:landscape) {
+	.background {
+		position: relative;
+		margin: 0 auto;
+		width: 1920px;
+		height: 1080px;
+		background-image: url('../images/background.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		font-size: 20px;
+	}
+	.home-background {
+		top: 140px;
+		left: 86.5px;
+		position: absolute;
+		width: 1747px;
+		height: 859px;
+		background-image: url('../images/home-background.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.home-avatar {
+		bottom: 0px;
+		left: 608px;
+		position: absolute;
+		width: 704px;
+		height: 866px;
+		background-image: url('../images/home-avatar-1.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.home-border {
+		top: 0px;
+		left: 0px;
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-image: url('../images/home-border-pc.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.wallet-area {
+		top: 8px;
+		left: 48px;
+		position: absolute;
+		width: 411px;
+		height: 126px;
+		background-image: url('../images/wallet-area.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 38px 20px 20px 88px;
+		color: #fff;
+		text-align: center;
+	}
+
+	/* token */
+	.token1-area {
+		top: 30px;
+		right: 100px;
+		position: absolute;
+		width: 261px;
+		height: 62px;
+		background-image: url('../images/food-area.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 16px 5px 16px 60px;
+		color: #fff;
+		text-align: center;
+	}
+	.token2-area {
+		top: 30px;
+		right: 400px;
+		position: absolute;
+		width: 261px;
+		height: 62px;
+		background-image: url('../images/stone-area.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 16px 5px 16px 60px;
+		color: #fff;
+		text-align: center;
+	}
+	.token2-extra-area {
+		top: 57px;
+		right: 50px;
+		position: absolute;
+		width: 109px;
+		height: 58px;
+		background-image: url('../images/stone-area-buy.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.token3-area {
+		top: 30px;
+		right: 700px;
+		position: absolute;
+		width: 261px;
+		height: 62px;
+		background-image: url('../images/money-area.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 16px 5px 16px 60px;
+		color: #fff;
+		text-align: center;
+	}
+	.token3-extra-area {
+		top: 57px;
+		right: 50px;
+		position: absolute;
+		width: 109px;
+		height: 58px;
+		background-image: url('../images/money-area-claim.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	/* referral */
+	.referral-area {
+		top: 188px;
+		left: 118px;
+		position: absolute;
+		width: 285px;
+		height: 97px;
+		background-image: url('../images/referral-area.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	/* sound */
+	.sound-area {
+		top: 188px;
+		right: 118px;
+		position: absolute;
+		width: 82px;
+		height: 97px;
+		background-image: url('../images/sound-area.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	/* button */
+	.button1-area {
+		bottom: 0px;
+		left: 70px;
+		position: absolute;
+		width: 256px;
+		height: 207px;
+		background-image: url('../images/button-worker.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.button2-area {
+		bottom: 0px;
+		left: 370px;
+		position: absolute;
+		width: 256px;
+		height: 207px;
+		background-image: url('../images/button-manage.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.button3-area {
+		bottom: 0px;
+		left: 670px;
+		position: absolute;
+		width: 256px;
+		height: 207px;
+		background-image: url('../images/button-hire.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.button4-area {
+		bottom: 0px;
+		left: 970px;
+		position: absolute;
+		width: 256px;
+		height: 207px;
+		background-image: url('../images/button-battle.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.button5-area {
+		bottom: 0px;
+		left: 1270px;
+		position: absolute;
+		width: 256px;
+		height: 207px;
+		background-image: url('../images/button-farm.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.button6-area {
+		bottom: 0px;
+		left: 1570px;
+		position: absolute;
+		width: 256px;
+		height: 207px;
+		background-image: url('../images/button-mine.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
+@media screen and (orientation:portrait) {
+	.background {
+		position: relative;
+		margin: 0 auto;
+		width: 1080px;
+		height: 1920px;
+		background-image: url('../images/background.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		font-size: 20px;
+	}
+	.home-background {
+		top: 380px;
+		left: 88px;
+		position: absolute;
+		width: 904px;
+		height: 980px;
+		background-image: url('../images/home-background.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.home-avatar {
+		top: 570px;
+		left: 188px;
+		position: absolute;
+		width: 704px;
+		height: 866px;
+		background-image: url('../images/home-avatar-1.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.home-border {
+		top: 0px;
+		left: 0px;
+		position: absolute;
+		width: 1080px;
+		height: 1920px;
+		background-image: url('../images/home-border-mobile.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.wallet-area {
+		top: 20px;
+		left: 28px;
+		position: absolute;
+		width: 411px;
+		height: 126px;
+		background-image: url('../images/wallet-area.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 38px 20px 20px 88px;
+		color: #fff;
+		text-align: center;
+	}
+
+	/* token */
+	.token1-area {
+		top: 168px;
+		right: 100px;
+		position: absolute;
+		width: 261px;
+		height: 62px;
+		background-image: url('../images/food-area.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 16px 5px 16px 60px;
+		color: #fff;
+		text-align: center;
+	}
+	.token2-area {
+		top: 168px;
+		left: 410px;
+		position: absolute;
+		width: 261px;
+		height: 62px;
+		background-image: url('../images/stone-area.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 16px 5px 16px 60px;
+		color: #fff;
+		text-align: center;
+	}
+	.token2-extra-area {
+		top: 57px;
+		right: 50px;
+		position: absolute;
+		width: 109px;
+		height: 58px;
+		background-image: url('../images/stone-area-buy.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.token3-area {
+		top: 168px;
+		left: 100px;
+		position: absolute;
+		width: 261px;
+		height: 62px;
+		background-image: url('../images/money-area.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 16px 5px 16px 60px;
+		color: #fff;
+		text-align: center;
+	}
+	.token3-extra-area {
+		top: 57px;
+		right: 50px;
+		position: absolute;
+		width: 109px;
+		height: 58px;
+		background-image: url('../images/money-area-claim.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	/* referral */
+	.referral-area {
+		top: 38px;
+		right: 100px;
+		position: absolute;
+		width: 285px;
+		height: 97px;
+		background-image: url('../images/referral-area.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	/* sound */
+	.sound-area {
+		top: 428px;
+		right: 100px;
+		position: absolute;
+		width: 82px;
+		height: 97px;
+		background-image: url('../images/sound-area.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	/* button */
+	.button1-area {
+		bottom: 268px;
+		left: 100px;
+		position: absolute;
+		width: 256px;
+		height: 207px;
+		background-image: url('../images/button-worker.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.button2-area {
+		bottom: 268px;
+		left: 400px;
+		position: absolute;
+		width: 256px;
+		height: 207px;
+		background-image: url('../images/button-manage.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.button3-area {
+		bottom: 268px;
+		left: 700px;
+		position: absolute;
+		width: 256px;
+		height: 207px;
+		background-image: url('../images/button-hire.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.button4-area {
+		bottom: 20px;
+		left: 100px;
+		position: absolute;
+		width: 256px;
+		height: 207px;
+		background-image: url('../images/button-battle.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.button5-area {
+		bottom: 20px;
+		left: 400px;
+		position: absolute;
+		width: 256px;
+		height: 207px;
+		background-image: url('../images/button-farm.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.button6-area {
+		bottom: 20px;
+		left: 700px;
+		position: absolute;
+		width: 256px;
+		height: 207px;
+		background-image: url('../images/button-mine.png');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
